@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Random Leet Code</title>
+  </head>
+  <body>
+    <main>
+      <h1>Random Leet Code</h1>
+      <hr />
+      <section id="button-container">
+        <button id="sort-leetcode">Sortear Leet Code</button>
+        <button id="open-leetcodes">Gerenciar Leet Codes</button>
+      </section>
+
+      <section id="leetcodes-container">
+        <header class="escondido">
+          <form>
+            <input type="search" placeholder="Leet Code Number" />
+          </form>
+
+          <div id="filtros">
+            <input type="radio" id="all" name="categoria" value="all" checked />
+            <label for="all">Todos</label>
+
+            <input
+              type="radio"
+              id="nao"
+              name="categoria"
+              value="nao-sorteado"
+            />
+            <label for="nao">Nunca Sorteados</label>
+
+            <input
+              type="radio"
+              id="dev"
+              name="categoria"
+              value="em-desenvolvimento"
+            />
+            <label for="dev">Esperando Solução</label>
+
+            <input
+              type="radio"
+              id="sol"
+              name="categoria"
+              value="solucionados"
+            />
+            <label for="sol">Solucionados</label>
+          </div>
+        </header>
+
+        <!-- GRID APENAS PARA OS CARDS -->
+        <div class="leetcodes-grid">
+          <!-- cards renderizados aqui -->
+        </div>
+      </section>
+    </main>
+
+    <script src="renderLeetcodes.js"></script>
+  </body>
+</html>
