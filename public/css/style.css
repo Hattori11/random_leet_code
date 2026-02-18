@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Escoder elemento */
+.hidden {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: #666;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+hr {
+    width: 95%;
+    border: none;
+    height: 1px;
+    background-color: #888;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+/* Container dos botões */
+#buttons-container {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+#draw-leetcode {
+    width: 20rem;
+    height: 3rem;
+    color: #fff;
+    border: solid #fff 1px;
+    background-color: #00f;
+    border-radius: 1rem;
+    font-size: 1rem;
+
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#draw-leetcode:active {
+    transform: scale(0.95);
+}
+
+#manage-leetcodes {
+    width: 20rem;
+    height: 3rem;
+    color: #000;
+    border: solid transparent 1px;
+    background-color: #eee;
+    border-radius: 1rem;
+    font-size: 1rem;
+
+    cursor: pointer;
+    transition: transform 0.2 ease, box-shadow 0.2s ease;
+}
+
+#manage-leetcodes:active {
+    transform: scale(0.95);
+}
+
+/* Container dos Leet Codes */
+#leetcodes-section {
+    margin-top: 1rem;
+    height: auto;
+    width: 100%;
+}
+
+#leetcodes-section header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25rem;
+}
+
+#leetcodes-section header form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#filter {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.option {
+    height: 2rem;
+    width: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.option input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.option label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+    background: #eee;
+    transition: background 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.option input:checked + label {
+    background: #00f;
+    color: #fff;
+}
+
+#leetcodes-section header form {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+#leetcodes-section header form input {
+    height: 2rem;
+    border-radius: 1rem;
+    border: solid #aaa 1px;
+    text-align: center;
+}
+
+#leetcodes-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, 150px);
+    justify-content: center;
+    padding: 1rem;
+}
