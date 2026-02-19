@@ -1,0 +1,29 @@
+{
+  "name": "randomleetcode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist\\server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hattori11/random_leet_code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hattori11/random_leet_code/issues"
+  },
+  "homepage": "https://github.com/Hattori11/random_leet_code#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  }
+}

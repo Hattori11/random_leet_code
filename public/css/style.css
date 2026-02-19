@@ -6,7 +6,7 @@
 }
 
 /* Escoder elemento */
-.hidden {
+#leetcodes-section .hidden {
     display: none;
 }
 
