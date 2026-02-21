@@ -1,3 +1,5 @@
+import { showHeader } from "./showHeader";
+
 async function renderLeetcodes(): Promise<void> {
   const leetcodesContainer = document.getElementById("leetcodes-container") as HTMLDivElement;
   const fragment = document.createDocumentFragment();
@@ -26,4 +28,5 @@ const btnManageLeetcodes = document.getElementById("manage-leetcodes") as HTMLBu
 
 btnManageLeetcodes.addEventListener("click", () => {
   renderLeetcodes();
+  showHeader();
 });
