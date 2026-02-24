@@ -5,7 +5,8 @@
     "rootDir": "./src/server",
     "outDir": "./dist",
     "strict": true,
-    "types": ["node"]
+    "types": ["node"],
+    "esModuleInterop": true
   },
   "include": ["src/server"]
 }
